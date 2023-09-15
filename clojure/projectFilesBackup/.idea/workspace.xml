@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01dfd615-3ce3-4cc3-bb61-25cbed6c2740" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DepsProjectDetails">
+    <option name="cachedModuleDetails">
+      <map>
+        <entry key="$PROJECT_DIR$/robot-simulator/deps.edn">
+          <value>
+            <ModuleDetails>
+              <option name="details" value="{:default {:classpath {&quot;src&quot; {:path-key :paths}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\clojure\\1.11.1\\clojure-1.11.1.jar&quot; {:lib-name org.clojure/clojure}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\core.specs.alpha\\0.2.62\\core.specs.alpha-0.2.62.jar&quot; {:lib-name org.clojure/core.specs.alpha}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\spec.alpha\\0.3.218\\spec.alpha-0.3.218.jar&quot; {:lib-name org.clojure/spec.alpha}}, :basis-config {}, :mvn/repos {&quot;central&quot; {:url &quot;https://repo1.maven.org/maven2/&quot;}, &quot;clojars&quot; {:url &quot;https://repo.clojars.org/&quot;}}, :paths [&quot;src&quot;], :classpath-roots [&quot;src&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\clojure\\1.11.1\\clojure-1.11.1.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\core.specs.alpha\\0.2.62\\core.specs.alpha-0.2.62.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\spec.alpha\\0.3.218\\spec.alpha-0.3.218.jar&quot;], :config-paths [&quot;C:\\Users\\Ryan_Khetlyr\\.deps.clj\\1.11.1.1347\\ClojureTools\\deps.edn&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.clojure\\deps.edn&quot; &quot;C:\\Users\\Ryan_Khetlyr\\Exercism\\clojure\\robot-simulator\\deps.edn&quot;], :alias-scopes {:system #{:test :deps}, :user #{}, :project #{:test}}, :alias-types {:deps :tool, :test :exec}, :libs {org.clojure/clojure {:mvn/version &quot;1.11.1&quot;, :deps/manifest :mvn, :parents #{[]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\clojure\\1.11.1\\clojure-1.11.1.jar&quot;]}, org.clojure/spec.alpha {:mvn/version &quot;0.3.218&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :parents #{[org.clojure/clojure]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\spec.alpha\\0.3.218\\spec.alpha-0.3.218.jar&quot;]}, org.clojure/core.specs.alpha {:mvn/version &quot;0.2.62&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :parents #{[org.clojure/clojure]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\core.specs.alpha\\0.2.62\\core.specs.alpha-0.2.62.jar&quot;]}}, :aliases {:deps {:replace-paths [], :replace-deps {org.clojure/tools.deps.cli {:mvn/version &quot;0.9.43&quot;}}, :ns-default clojure.tools.deps.cli.api, :ns-aliases {help clojure.tools.deps.cli.help}}, :test {:extra-paths [&quot;test&quot;], :extra-deps {io.github.cognitect-labs/test-runner {:git/url &quot;https://github.com/cognitect-labs/test-runner.git&quot;, :sha &quot;705ad25bbf0228b1c38d0244a36001c2987d7337&quot;}}, :main-opts [&quot;-m&quot; &quot;cognitect.test-runner&quot;], :exec-fn cognitect.test-runner.api/test}}, :deps {org.clojure/clojure {:mvn/version &quot;1.11.1&quot;}}}, :aliases {:classpath {&quot;C:\\Users\\Ryan_Khetlyr\\.gitlibs\\libs\\io.github.cognitect-labs\\test-runner\\705ad25bbf0228b1c38d0244a36001c2987d7337\\src&quot; {:lib-name io.github.cognitect-labs/test-runner}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\java.classpath\\1.0.0\\java.classpath-1.0.0.jar&quot; {:lib-name org.clojure/java.classpath}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.namespace\\1.1.0\\tools.namespace-1.1.0.jar&quot; {:lib-name org.clojure/tools.namespace}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.reader\\1.3.4\\tools.reader-1.3.4.jar&quot; {:lib-name org.clojure/tools.reader}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.cli\\1.0.206\\tools.cli-1.0.206.jar&quot; {:lib-name org.clojure/tools.cli}, &quot;src&quot; {:path-key :paths}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\spec.alpha\\0.3.218\\spec.alpha-0.3.218.jar&quot; {:lib-name org.clojure/spec.alpha}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\clojure\\1.11.1\\clojure-1.11.1.jar&quot; {:lib-name org.clojure/clojure}, &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\core.specs.alpha\\0.2.62\\core.specs.alpha-0.2.62.jar&quot; {:lib-name org.clojure/core.specs.alpha}, &quot;test&quot; {:path-key :extra-paths}}, :basis-config {:aliases [:test]}, :mvn/repos {&quot;central&quot; {:url &quot;https://repo1.maven.org/maven2/&quot;}, &quot;clojars&quot; {:url &quot;https://repo.clojars.org/&quot;}}, :argmap {:extra-paths [&quot;test&quot;], :extra-deps {io.github.cognitect-labs/test-runner {:git/url &quot;https://github.com/cognitect-labs/test-runner.git&quot;, :sha &quot;705ad25bbf0228b1c38d0244a36001c2987d7337&quot;}}, :main-opts [&quot;-m&quot; &quot;cognitect.test-runner&quot;], :exec-fn cognitect.test-runner.api/test}, :paths [&quot;src&quot;], :classpath-roots [&quot;test&quot; &quot;src&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.gitlibs\\libs\\io.github.cognitect-labs\\test-runner\\705ad25bbf0228b1c38d0244a36001c2987d7337\\src&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\clojure\\1.11.1\\clojure-1.11.1.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.cli\\1.0.206\\tools.cli-1.0.206.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.namespace\\1.1.0\\tools.namespace-1.1.0.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\core.specs.alpha\\0.2.62\\core.specs.alpha-0.2.62.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\spec.alpha\\0.3.218\\spec.alpha-0.3.218.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\java.classpath\\1.0.0\\java.classpath-1.0.0.jar&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.reader\\1.3.4\\tools.reader-1.3.4.jar&quot;], :config-paths [&quot;C:\\Users\\Ryan_Khetlyr\\.deps.clj\\1.11.1.1347\\ClojureTools\\deps.edn&quot; &quot;C:\\Users\\Ryan_Khetlyr\\.clojure\\deps.edn&quot; &quot;C:\\Users\\Ryan_Khetlyr\\Exercism\\clojure\\robot-simulator\\deps.edn&quot;], :alias-scopes {:system #{:test :deps}, :user #{}, :project #{:test}}, :alias-types {:deps :tool, :test :exec}, :libs {org.clojure/clojure {:mvn/version &quot;1.11.1&quot;, :deps/manifest :mvn, :parents #{[]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\clojure\\1.11.1\\clojure-1.11.1.jar&quot;]}, io.github.cognitect-labs/test-runner {:git/url &quot;https://github.com/cognitect-labs/test-runner.git&quot;, :git/sha &quot;705ad25bbf0228b1c38d0244a36001c2987d7337&quot;, :deps/manifest :deps, :deps/root &quot;C:\\Users\\Ryan_Khetlyr\\.gitlibs\\libs\\io.github.cognitect-labs\\test-runner\\705ad25bbf0228b1c38d0244a36001c2987d7337&quot;, :parents #{[]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.gitlibs\\libs\\io.github.cognitect-labs\\test-runner\\705ad25bbf0228b1c38d0244a36001c2987d7337\\src&quot;]}, org.clojure/spec.alpha {:mvn/version &quot;0.3.218&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :parents #{[org.clojure/clojure]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\spec.alpha\\0.3.218\\spec.alpha-0.3.218.jar&quot;]}, org.clojure/core.specs.alpha {:mvn/version &quot;0.2.62&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :parents #{[org.clojure/clojure]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\core.specs.alpha\\0.2.62\\core.specs.alpha-0.2.62.jar&quot;]}, org.clojure/tools.namespace {:mvn/version &quot;1.1.0&quot;, :deps/manifest :mvn, :dependents [io.github.cognitect-labs/test-runner], :parents #{[io.github.cognitect-labs/test-runner]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.namespace\\1.1.0\\tools.namespace-1.1.0.jar&quot;]}, org.clojure/tools.cli {:mvn/version &quot;1.0.206&quot;, :deps/manifest :mvn, :dependents [io.github.cognitect-labs/test-runner], :parents #{[io.github.cognitect-labs/test-runner]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.cli\\1.0.206\\tools.cli-1.0.206.jar&quot;]}, org.clojure/java.classpath {:mvn/version &quot;1.0.0&quot;, :deps/manifest :mvn, :dependents [org.clojure/tools.namespace], :parents #{[io.github.cognitect-labs/test-runner org.clojure/tools.namespace]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\java.classpath\\1.0.0\\java.classpath-1.0.0.jar&quot;]}, org.clojure/tools.reader {:mvn/version &quot;1.3.4&quot;, :deps/manifest :mvn, :dependents [org.clojure/tools.namespace], :parents #{[io.github.cognitect-labs/test-runner org.clojure/tools.namespace]}, :paths [&quot;C:\\Users\\Ryan_Khetlyr\\.m2\\repository\\org\\clojure\\tools.reader\\1.3.4\\tools.reader-1.3.4.jar&quot;]}}, :aliases {:deps {:replace-paths [], :replace-deps {org.clojure/tools.deps.cli {:mvn/version &quot;0.9.43&quot;}}, :ns-default clojure.tools.deps.cli.api, :ns-aliases {help clojure.tools.deps.cli.help}}, :test {:extra-paths [&quot;test&quot;], :extra-deps {io.github.cognitect-labs/test-runner {:git/url &quot;https://github.com/cognitect-labs/test-runner.git&quot;, :sha &quot;705ad25bbf0228b1c38d0244a36001c2987d7337&quot;}}, :main-opts [&quot;-m&quot; &quot;cognitect.test-runner&quot;], :exec-fn cognitect.test-runner.api/test}}, :deps {org.clojure/clojure {:mvn/version &quot;1.11.1&quot;}}}}" />
+              <option name="hash" value="4c1e822ea1057669c919bdba4422522f" />
+            </ModuleDetails>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2VItGzR7VKZwi4nmVm55KoPKbO8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Ryan_Khetlyr/Exercism/clojure",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="REPL for robot-simulator" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
+      <option name="configVersion" value="1" />
+      <option name="displayName" value="REPL for robot-simulator" />
+      <option name="execution" value="DEPS" />
+      <module name="robot-simulator" />
+      <option name="options" />
+      <option name="profiles" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/robot-simulator" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Clojure REPL.REPL for robot-simulator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01dfd615-3ce3-4cc3-bb61-25cbed6c2740" name="Changes" comment="" />
+      <created>1694535330653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694535330653</updated>
+    </task>
+    <servers />
+  </component>
+</project>
