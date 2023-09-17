@@ -5,7 +5,7 @@
   "Takes a string representing a log line
    and returns its message with whitespace trimmed."
   [s]
-  (last (re-find #".*:\s(.*)" s))
+  (clojure.string/trim (last (re-find #".*:\s(.*)" s)))
   )
 (comment
   (clojure.test/run-tests 'log-levels-test)
