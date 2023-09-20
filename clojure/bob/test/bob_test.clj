@@ -86,8 +86,11 @@
 (deftest is-yelled?-returns-false
    (is (= false (bob/is-yelled? "I'm not yelling."))))
 
-(deftest is-a-question?-resturns-false
+(deftest is-a-question?-returns-false
    (is (= false (bob/is-question? "Hi."))))
 
-(deftest is-a-question?-resturns-false
+(deftest is-a-question?-returns-false
   (is (= true (bob/is-question? "Hi?"))))
+
+(deftest is-silence?-returns-false
+  (is (= false (bob/is-silence? "Hi"))))
