@@ -94,3 +94,6 @@
 
 (deftest is-silence?-returns-false
   (is (= false (bob/is-silence? "Hi"))))
+
+(deftest has-letters?-returns-false
+  (is (= false (bob/has-letters? "1,2,3"))))

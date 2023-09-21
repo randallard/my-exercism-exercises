@@ -1,5 +1,17 @@
 (ns bob)
 
+(defn has-letters? [s]
+  (not (nil? (re-find #"[a-zA-Z]+" s))))
+(comment
+  (let [s '("1,2,3A" "1,2s,3" "1,2,3")]
+    (map has-letters? s))
+  (let [s '("1,2,3A" "1,2s,3" "1,2,3")]
+    (map #(re-find #"[a-zA-Z]+" %) s))
+  (let [s "1,2,3"]
+    (re-find #"[a-zA-Z]+" s))
+  (clojure.test/run-tests 'bob-test)
+  )
+
 (defn is-silence? [s]
   (= "" (clojure.string/trim s)))
 (comment
@@ -11,8 +23,12 @@
   )
 
 (defn is-yelled? [s]
-  (and (not (is-silence? s)) (= (clojure.string/upper-case s) s)))
+  (and (has-letters? s) (not (is-silence? s)) (= (clojure.string/upper-case s) s)))
 (comment
+  (clojure.test/run-tests 'bob-test)
+  (is-yelled? "1, 2, 3")
+  (is-yelled? "HI!")
+  (is-yelled? "")
   (let [string "hi"]
     (= (clojure.string/upper-case string) string))
   (let [string "HI"]
@@ -21,9 +37,6 @@
     (= (clojure.string/upper-case string) string))
   (let [string "Hi!"]
     (= (clojure.string/upper-case string) string))
-  (is-yelled? "HI!")
-  (is-yelled? "")
-  (clojure.test/run-tests 'bob-test)
   )
 
 (defn is-question? [s]
@@ -52,7 +65,6 @@
         (is-question? s) "Sure."
         (is-silence? s)  "Fine. Be that way!"
         :else "Whatever."))
-
 (comment
   (response-for "Okay if like my  spacebar  quite a bit?   ")
   (clojure.test/run-tests 'bob-test)
