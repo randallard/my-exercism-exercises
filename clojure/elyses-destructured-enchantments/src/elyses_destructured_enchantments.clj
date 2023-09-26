@@ -41,4 +41,19 @@
 (defn insert-face-cards
   "Returns the deck with face cards between its head and tail."
   [deck]
+  (if (= 0 (count deck))
+    face-cards
+    (vec (cons (first deck) (reduce conj face-cards (drop 1 deck)))))
 )
+(comment
+  (let [deck [1 2 19]]
+    #_(vec (drop 1 deck))
+
+    #_(reduce conj face-cards (drop 1 deck))                  ; new deck except first card
+    (vec (cons (first deck) (reduce conj face-cards (drop 1 deck))))
+    #_(conj (first deck) (vec (drop 1 deck))))
+
+  (insert-face-cards [])
+  (insert-face-cards [1 2 19])
+  (clojure.test/run-tests 'elyses-destructured-enchantments-test)
+  )
