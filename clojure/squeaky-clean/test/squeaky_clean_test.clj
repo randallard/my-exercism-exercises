@@ -5,6 +5,11 @@
 (deftest ^{:task 1} replace-spaces-single-in-front
   (is (= "_A" (squeaky-clean/replace-spaces " A"))))
 
+(deftest ^{:task 1} replace-spaces-interspersed
+  (is (= "_*__Ab_c_de___" (squeaky-clean/replace-spaces " *  Ab c de _ "))))
+
+
+
 (deftest ^{:task 1} clean-single-letter
   (is (= "A" (squeaky-clean/clean "A"))))
 
