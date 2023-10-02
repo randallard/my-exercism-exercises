@@ -8,8 +8,6 @@
 (deftest ^{:task 1} replace-spaces-interspersed
   (is (= "_*__Ab_c_de___" (squeaky-clean/replace-spaces " *  Ab c de _ "))))
 
-
-
 (deftest ^{:task 1} clean-single-letter
   (is (= "A" (squeaky-clean/clean "A"))))
 
@@ -30,6 +28,9 @@
 
 (deftest ^{:task 4} clean-string-with-special-characters
   (is (= "MyFinder" (squeaky-clean/clean "My😀😀Finder😀"))))
+
+(deftest ^{:task 4} clean-string-with-numbers
+  (is (= "MyFinder" (squeaky-clean/remove-numbers "1My2Finder3"))))
 
 (deftest ^{:task 4} clean-string-with-numbers
   (is (= "MyFinder" (squeaky-clean/clean "1My2Finder3"))))

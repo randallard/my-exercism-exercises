@@ -13,17 +13,24 @@
   (clojure.test/run-tests 'squeaky-clean-test)
   )
 
-
+(defn remove-numbers [s]
+  (str/replace s #"[^A-Za-z_]" ""))
 (comment
   (str/replace "a1_b2_" #"[^A-Za-z_]" "")
+  (remove-numbers "1My2Finder3")
+  (clojure.test/run-tests 'squeaky-clean-test)
   )
 (defn clean
   "returns a new string, based on the parameter after the following transformations
-      replace all spaces with underscores, including leading and trailing spaces"
+      replace all spaces with underscores, including leading and trailing spaces
+      remove all digits
+      "
   [s]
-  (replace-spaces s)
-  )
+  (-> s replace-spaces
+        remove-numbers))
 
 (comment
+  (clean "1My2Finder3")
+  (clean "  1My2 Finder 3")
   (clojure.test/run-tests 'squeaky-clean-test)
   )
