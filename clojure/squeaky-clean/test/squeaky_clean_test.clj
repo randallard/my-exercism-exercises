@@ -38,5 +38,8 @@
 (deftest ^{:task 5} omit-lower-case-greek-letters
   (is (= "MyΟFinder" (squeaky-clean/clean "MyΟβιεγτFinder"))))
 
+(deftest ^{:task 5} omit-lower-case-greek-letters
+  (is (= "MyΟΑΩFinder" (squeaky-clean/clean "MyΟβιεγτΑΩFinder"))))
+
 (deftest ^{:task 5} combine-conversions
   (is (= "_AbcĐCTRL" (squeaky-clean/clean "9 -abcĐ😀ω\0"))))

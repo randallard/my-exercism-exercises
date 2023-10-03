@@ -14,9 +14,10 @@
   )
 
 (defn remove-non-letters [s]
-  (str/replace s #"[^A-Za-z_Ο]" ""))
+  (str/replace s #"[^A-Za-zΑ-Ω_]" ""))
 (comment
-  (str/replace "MyΟβιεγτFinder" #"[^A-Za-z_Ο]" "")
+  (str/replace "MyΟβιεγτFinder" #"[^A-Za-zΑ-Ω_]" "")
+  (str/replace "MyΟβιεγτΑΩFinder" #"[^A-Za-zΑ-Ω_]" "")
   (str/replace "a1_b2_" #"[^A-Za-z_]" "")
   (remove-non-letters "1My2Finder3")
   (clojure.test/run-tests 'squeaky-clean-test)
