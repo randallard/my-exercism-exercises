@@ -30,7 +30,7 @@
   (is (= "MyFinder" (squeaky-clean/clean "My😀😀Finder😀"))))
 
 (deftest ^{:task 4} clean-string-with-numbers
-  (is (= "MyFinder" (squeaky-clean/remove-numbers "1My2Finder3"))))
+  (is (= "MyFinder" (squeaky-clean/remove-non-letters "1My2Finder3"))))
 
 (deftest ^{:task 4} clean-string-with-numbers
   (is (= "MyFinder" (squeaky-clean/clean "1My2Finder3"))))
