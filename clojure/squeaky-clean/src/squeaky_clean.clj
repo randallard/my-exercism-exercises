@@ -25,7 +25,7 @@
 (defn clean
   "returns a new string, based on the parameter after the following transformations
       replace all spaces with underscores, including leading and trailing spaces
-      remove all characters that are not letters or greek letter Ο 
+      remove all characters that are not letters or greek upper-case letters
       "
   [s]
   (-> s replace-spaces
