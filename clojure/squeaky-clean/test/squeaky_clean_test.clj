@@ -20,6 +20,9 @@
 (deftest ^{:task 1} clean-empty-string
   (is (= "" (squeaky-clean/clean ""))))
 
+(deftest ^{:task 2} replace-control-char
+  (is (= "myCTRLId" (squeaky-clean/replace-control-char "my\u0080Id"))))
+
 (deftest ^{:task 2} clean-string-with-control-char
   (is (= "myCTRLId" (squeaky-clean/clean "my\u0080Id"))))
 

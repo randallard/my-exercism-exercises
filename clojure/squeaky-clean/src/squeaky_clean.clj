@@ -22,13 +22,23 @@
   (remove-non-letters "1My2Finder3")
   (clojure.test/run-tests 'squeaky-clean-test)
   )
+
+(defn replace-control-char [s]
+  (str/replace s #"[\u0000-\u001F\u007F-\u009F]" "CTRL"))
+(comment
+  (str/replace "my\u0080Id" #"[\u0000-\u001F\u007F-\u009F]" "CTRL")
+  (replace-control-char "my\u0080Id")
+  (clojure.test/run-tests 'squeaky-clean-test)
+  )
 (defn clean
   "returns a new string, based on the parameter after the following transformations
       replace all spaces with underscores, including leading and trailing spaces
       remove all characters that are not letters or greek upper-case letters
+      replace control characters with CTRL
       "
   [s]
   (-> s replace-spaces
+        replace-control-char
         remove-non-letters))
 
 (comment
