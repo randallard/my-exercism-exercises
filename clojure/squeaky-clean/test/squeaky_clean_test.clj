@@ -29,6 +29,9 @@
 (deftest ^{:task 3} convert-kebab-to-camel-case
   (is (= "àḂç" (squeaky-clean/clean "à-ḃç"))))
 
+(deftest ^{:task 3} convert-kebab-to-camel-case
+  (is (= "thisIsVar" (squeaky-clean/kebab-to-camel "this-is-var"))))
+
 (deftest ^{:task 4} clean-string-with-special-characters
   (is (= "MyFinder" (squeaky-clean/clean "My😀😀Finder😀"))))
 
